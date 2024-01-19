@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.digitalbanking.HelloController">
+
+    <ImageView fitHeight="520.0" fitWidth="673.0" layoutX="-73.0">
+        <image>
+            <Image url="@withdraw.png" />
+        </image>
+    </ImageView>
+
+    <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+        <VBox alignment="CENTER" spacing="20">
+            <Label style="-fx-font-size: 24; -fx-text-fill: white;" text="Withdraw Money" />
+
+
+            <HBox spacing="10">
+                <VBox spacing="5">
+                    <Label style="-fx-font-size: 16; -fx-text-fill: white;" text="Account Number:" />
+                    <TextField fx:id="accountNumberField" promptText="Enter account number" />
+                </VBox>
+
+                <VBox spacing="5">
+                    <Label style="-fx-font-size: 16; -fx-text-fill: white;" text="Withdrawal Amount:" />
+                    <TextField fx:id="withdrawalAmountField" promptText="Enter withdrawal amount" />
+                </VBox>
+            </HBox>
+
+            <VBox spacing="5">
+                <Label style="-fx-font-size: 16; -fx-text-fill: white;" text="Withdrawal Date:" />
+                <TextField fx:id="withdrawalDateField" promptText="Enter withdrawal date" />
+            </VBox>
+
+            <VBox spacing="5">
+                <Label style="-fx-font-size: 16; -fx-text-fill: white;" text="Withdrawal Type:" />
+                <TextField fx:id="withdrawalTypeField" promptText="Enter withdrawal type" />
+            </VBox>
+
+            <VBox spacing="5">
+                <Label style="-fx-font-size: 16; -fx-text-fill: white;" text="Reference Number:" />
+                <TextField fx:id="referenceNumberField" promptText="Enter reference number" />
+            </VBox>
+
+        </VBox>
+    </HBox>
+
+
+      <Button layoutX="266.0" layoutY="446.0" onAction="#gotosuccess2" text="Withdraw" />
+   <Label layoutX="283.0" layoutY="396.0" textFill="WHITE" />
+   <Label fx:id="withdrawlabel" layoutX="286.0" layoutY="399.0" textFill="WHITE" />
+</AnchorPane>
